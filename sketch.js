@@ -4470,8 +4470,8 @@ function abrirIframe(indice) {
     iframe = createElement("iframe");
     iframe.attribute("src", url);
     iframe.attribute("width", "1280");
-    iframe.attribute("height", "720");
-    iframe.position(-1, -3);
+    iframe.attribute("height", "724");
+    iframe.position(-1, -6);
     URLOpened = true;
     
   }
