@@ -4467,11 +4467,12 @@ function abrirIframe(indice) {
     JuegoSeleccionadoData = indice;
     
     let url = urls[indice]; // Selecciona la URL actual
-    iframe = createElement("iframe");
+    /*iframe = createElement("iframe");
     iframe.attribute("src", url);
     iframe.attribute("width", "1284");
     iframe.attribute("height", "724");
-    iframe.position(-2, -5);
+    iframe.position(-2, -5);*/
+    window.open(url, "_blank");
     URLOpened = true;
     
   }
@@ -4545,13 +4546,18 @@ function abrirIframe(indice) {
 
 // Función para cerrar el iframe
 function cerrarIframe() {
-  if (iframe) {
+    VolverActualizarDatos = true;
+    URLOpened = false; // Permitir abrirlo nuevamente
+    VolverActualizarDatos = true;
+    ref = database.ref("Proyectores/Proyector" + ID_PROYECTOR + "JuegoSel");
+    ref.set(-2);
+  /*if (iframe) {
     iframe.remove(); // Elimina el iframe del DOM
     URLOpened = false; // Permitir abrirlo nuevamente
     VolverActualizarDatos = true;
     ref = database.ref("Proyectores/Proyector" + ID_PROYECTOR + "JuegoSel");
     ref.set(-2);
-  }
+  }*/
 }
 
 // Detectar el primer clic
