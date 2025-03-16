@@ -4471,7 +4471,7 @@ function abrirIframe(indice) {
     iframe.attribute("src", url);
     iframe.attribute("width", "1280");
     iframe.attribute("height", "720");
-    iframe.position(0, -1);
+    iframe.position(-1, -3);
     URLOpened = true;
     
   }
