@@ -4469,9 +4469,9 @@ function abrirIframe(indice) {
     let url = urls[indice]; // Selecciona la URL actual
     iframe = createElement("iframe");
     iframe.attribute("src", url);
-    iframe.attribute("width", "1280");
+    iframe.attribute("width", "1284");
     iframe.attribute("height", "724");
-    iframe.position(-1, -6);
+    iframe.position(-2, -5);
     URLOpened = true;
     
   }
