@@ -4578,3 +4578,9 @@ function mouseReleased() {
         
       }
 }
+
+function mousePressed() {
+  if (!fullscreen()) {  // Si no está en fullscreen
+    fullscreen(true);   // Activar fullscreen
+  }
+}
