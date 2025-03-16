@@ -4324,6 +4324,12 @@ function GameMenu() {
   }
   
       if (mouseY >= height - 10) {
+
+        if (URLOpened == true) {
+
+          cerrarIframe();
+          
+        }
       
       if (11 - round((millis() - proyectorMillisANT) / 1000) >= 0) {
         if (11 - round((millis() - proyectorMillisANT) / 1000) <= 9) {
@@ -4452,12 +4458,12 @@ function smoothVariable(targetValue) {
 // Función para abrir el iframe con la URL actual
 function abrirIframe(indice) {
   
-  push();
+  /*push();
   noStroke();
   fill(0);
   rectMode(CENTER)
   rect(width/2, height/2, width, height);
-  pop();
+  pop();*/
   
   if (URLOpened == false) {
     
